@@ -22,11 +22,14 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: 18  # Specify your Node.js version
+    
+      - name: Install Dependencies
+        run:
+            cd actions-trial
 
       # Step 3: Install dependencies
       - name: Install Dependencies
-        run:
-            cd actions-trial 
+        run: 
             npm install
 
       # Step 4: Build the project
